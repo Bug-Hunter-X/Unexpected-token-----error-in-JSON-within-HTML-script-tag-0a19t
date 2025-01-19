@@ -1,0 +1,5 @@
+<!DOCTYPE html><html><head><title>Uncommon HTML Bug Solution</title></head><body><h1>This is a heading</h1><p>This is a paragraph.</p><script>fetch('data.json').then(response => response.json()).then(data => {
+  const element = document.querySelector('h1');
+  element.textContent = data.heading;
+  element.style.color = data.color;
+}).catch(error => console.error('Error:', error));</script></body></html>
